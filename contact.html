@@ -1,0 +1,186 @@
+
+<head>
+<title>Dhaka Stock Exchange</title>
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link class="include" rel="stylesheet" type="text/css" href="css/jquery.jqplot.css" />
+<!-- calender -->
+<link type="text/css" href="css/jquery.simple-dtpicker.css" rel="stylesheet" />
+<!-- //calender -->
+
+<!-- font-awesome icons -->
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<link href="images/1.jpg" rel="shortcut icon">
+<!-- //font-awesome icons -->
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+
+<!-- js -->
+<!-- pop-up -->
+<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+<!-- //pop-up -->
+<!-- left-chart -->
+<script src="js/jquery.flot.min.js" type="text/javascript"></script> 
+<script src="js/jquery.flot.animator.min.js" type="text/javascript"></script>
+<!-- //left-chart -->
+<link href="//fonts.googleapis.com/css?family=Muli:300,300i,400,400i" rel="stylesheet">
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){     
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+        });
+    });
+</script>
+<!-- start-smoth-scrolling -->
+</head>
+    
+<body>
+<!-- header -->
+    <div class="header">
+        <div class="dsels_header_top">
+            <div class="container">
+                <div class="dsel_header_left">
+                    <ul class="dselayouts_header">
+                        
+                        <li class="dselayouts_header_list">
+                            <a href="login.html">Login</a><i>|</i>
+                        </li>
+                        <li class="dselayouts_header_list">
+                            <a href="faq.html">FAQ</a><i>|</i>
+                        </li>
+                        <li class="dselayouts_header_list">
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <div class="dsels_header_middle">
+            <div class="container">
+                <div class="agileits_logo">
+                    <h1><a href="index.html">Dhaka Stock Exchange<i>Trade anytime anywhere</i></a></h1>
+                </div>
+                <div class="agileits_search">
+                    <form action="#" method="post">
+                        <input name="Search" type="text" placeholder="Search" required="">
+                        
+                        <input type="submit" value="Search">
+                    </form>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+<!-- //header -->
+<!-- navigation -->
+    <div class="trade_navigation">
+        <div class="container">
+            <nav class="navbar nav_bottom">
+             
+               <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                    <nav class="wthree_nav">
+                        <ul class="nav navbar-nav nav_1">
+                            <li class="act"><a href="index.html">Home</a></li>
+                            <li><a href="stock.html">Stock</a></li>
+                            <li><a href="graph.html">Graph</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="highlights.html">Market Highlight</a></li>
+                            <li><a href="service.html">Customer Service</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </nav>
+        </div>
+    </div>
+<!-- //navigation -->
+
+<!-- contact -->
+    <div class="agileits_dselayouts_map">
+        <iframe src="https://www.mapsdirections.info/en/custom-google-maps/map.php?width=100%&height=600&hl=ru&q=Stock%20Exchange%20Building%2C%209%2FF%2C%20Toyenbee%20Rd%2C%20Dhaka%201000+(Dhaka%20Stock%20Exchange)&ie=UTF8&t=&z=14&iwloc=A&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.mapsdirections.info/en/custom-google-maps/">Create a custom Google Map</a> by <a href="https://www.mapsdirections.info/en/">Measure area on map</a></iframe><br/>
+    </div>
+    <div class="keep_touch">
+        <div class="container">
+            <div class="col-md-4 keep_touch_left">
+                <div class="keep_touch">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                </div>
+                <p>+880-123456789</p>
+            </div>
+            <div class="col-md-4 keep_touch_left">
+                <div class="keep_touch">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                </div>
+                <p>Stock Exchange Building, 9/FToyenbee Rd <span> Dhaka 1000, BANGLADESH</span></p>
+            </div>
+            <div class="col-md-4 keep_touch_left">
+                <div class="keep_touch">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </div>
+                <a href="dse@bol-online.com">dse@bol-online.com</a>
+            </div>
+           
+        </div>
+    </div>
+    <div class="contact">
+        <div class="container">
+            <h3>Contact Us</h3>
+            <div class="contact_grids">
+                <form action="#" method="post">
+                    <div class="col-md-6 contact_left_grid">
+                        <span class="input input--kuro">
+                            <input class="input__field input__field--kuro" type="text" id="input-7" placeholder="" required="">
+                            <label class="input__label input__label--kuro" for="input-7">
+                                <span class="input__label-content input__label-content--kuro">Name</span>
+                            </label>
+                        </span>
+                        <span class="input input--kuro">
+                            <input class="input__field input__field--kuro" type="email" id="input-8" placeholder="" required="">
+                            <label class="input__label input__label--kuro" for="input-8">
+                                <span class="input__label-content input__label-content--kuro">Email</span>
+                            </label>
+                        </span>
+                        <span class="input input--kuro">
+                            <input class="input__field input__field--kuro" type="text" id="input-9" placeholder="" required="">
+                            <label class="input__label input__label--kuro" for="input-9">
+                                <span class="input__label-content input__label-content--kuro">Subject</span>
+                            </label>
+                        </span>
+                    </div>
+                    <div class="col-md-6 contact_left_grid">
+                        <textarea name="Message" placeholder="Message..." required=""></textarea>
+                    </div>
+                   
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+<!-- //contact -->
+<!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <ul class="agileits_dselayouts_footer_info">
+                <li><a href="index.html">Home</a><i>|</i></li>
+                <li><a href="stocks.html">Stocks</a><i>|</i></li>
+                <li><a href="news.html">news</a><i>|</i></li>
+                <li><a href="highlights.html">Market Highlights</a><i>|</i></li>
+                <li><a href="portfolio.html">portfolio</a><i>|</i></li>
+                <li><a href="about.html">About Us</a><i>|</i></li>
+                <li><a href="contact.html">Contact</a><i>|</i></li>
+                <li><a href="service.html">Service</a></li>
+            </ul>
+             <p>© 2017 Dhaka Stock Exchange. All rights reserved | Design by ULABian</p>
+        </div>
+    </div>
+<!-- //footer -->
+
+</body>
+</html>

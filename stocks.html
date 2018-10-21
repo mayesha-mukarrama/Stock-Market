@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dhaka Stock Exchange</title>
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link class="include" rel="stylesheet" type="text/css" href="css/jquery.jqplot.css" />
+<!-- calender -->
+<link type="text/css" href="css/jquery.simple-dtpicker.css" rel="stylesheet" />
+<!-- //calender -->
+
+<!-- font-awesome icons -->
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<link href="images/1.jpg" rel="shortcut icon">
+<!-- //font-awesome icons -->
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+
+<!-- js -->
+<!-- pop-up -->
+<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+<!-- //pop-up -->
+<!-- left-chart -->
+<script src="js/jquery.flot.min.js" type="text/javascript"></script> 
+<script src="js/jquery.flot.animator.min.js" type="text/javascript"></script>
+<!-- //left-chart -->
+<link href="//fonts.googleapis.com/css?family=Muli:300,300i,400,400i" rel="stylesheet">
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){     
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+        });
+    });
+</script>
+<script type="text/javascript"
+    src="js/jquery-1.10.1.min.js"></script>
+    <script>
+    $(document).ready(
+    
+            function() {
+            var randomnumber;
+                setInterval(function() {
+                
+                     randomnumber = Math.floor((Math.random() * 20 )+1);
+                     randomnumber1 = Math.floor((Math.random() * 20 )+1);
+                     randomnumber2 = Math.floor((Math.random() * 20 )+1);
+                     randomnumber3 = Math.floor((Math.random() * 20 )+1);
+                     randomnumber4 = Math.floor((Math.random() * 20 )+1);
+                     randomnumber5 = Math.floor((Math.random() * 20 )+1);
+                     randomnumber6 = Math.floor((Math.random() * 20 )+1);
+                     randomnumber7 = Math.floor((Math.random() * 20 )+1);
+                     randomnumber8 = Math.floor((Math.random() * 20 )+1);
+                     randomnumber9 = Math.floor((Math.random() * 20 )+1);
+                     randomnumber10 = Math.floor((Math.random() * 20 )+1);
+                     randomnumber11 = Math.floor((Math.random() * 20 )+1);
+                     randomnumber12 = Math.floor((Math.random() * 20 )+1);
+                     randomnumber13 = Math.floor((Math.random() * 20 )+1);
+                     randomnumber14 = Math.floor((Math.random() * 20 )+1);
+                     randomnumber15 = Math.floor((Math.random() * 20 )+1);
+                     randomnumber16 = Math.floor((Math.random() * 20 )+1);
+                     randomnumber17 = Math.floor((Math.random() * 20 )+1);
+                     $('#c0').text(''+randomnumber);
+                     $('#c3').text(''+randomnumber1);
+                     $('#c6').text(''+randomnumber2);
+                     $('#c9').text(''+randomnumber3);
+                     $('#c12').text(''+randomnumber4);
+                     $('#c15').text(''+randomnumber5);
+                     $('#c18').text(''+randomnumber6);
+                     $('#c21').text(''+randomnumber7);
+                     $('#c24').text(''+randomnumber8);
+                     $('#c27').text(''+randomnumber9);
+                     $('#c30').text(''+randomnumber10);
+                     $('#c33').text(''+randomnumber11);
+                     $('#c36').text(''+randomnumber12);
+                     $('#c39').text(''+randomnumber13);
+                     $('#c42').text(''+randomnumber14);
+                     $('#c45').text(''+randomnumber15);
+                     $('#c48').text(''+randomnumber16);
+                     $('#c51').text(''+randomnumber17);
+                    //randomnumber =(Math.random() * (0.120 - 0.0200) + 0.0200).toFixed(2);
+                                 
+                    if ((randomnumber % 2)!=0)
+                    {
+                          $('#c2').text(''+(3410+randomnumber));
+                          var x = document.getElementById("c0");
+                          x.style.color = "red";
+                          $('#c0').text('-'+randomnumber);
+                          
+                          }
+                          
+                    else{
+                    $('#c2').text(''+(3410-randomnumber));
+                     var x = document.getElementById("c0");
+                          x.style.color = "#00cc00";
+                         
+                    
+                    }
+                    
+                    if ((randomnumber1 % 2)!=0)
+                    {
+                    
+                    var x = document.getElementById("c3");
+                          x.style.color = "red";
+                          $('#c3').text('-'+randomnumber1);
+                          $('#c5').text(''+(2063+randomnumber1));
+                           
+                          }
+                          
+                    else{
+                    
+                     var x = document.getElementById("c3");
+                          x.style.color = "#00cc00";
+                         
+                         $('#c5').text(''+(2063-randomnumber1));
+                           
+                    
+                    }
+                    if ((randomnumber2 % 2)!=0)
+                    {
+                    
+                    var x = document.getElementById("c6");
+                          x.style.color = "red";
+                          $('#c6').text('-'+randomnumber2);
+                          $('#c8').text(''+(1775+randomnumber2));
+                           
+                          }
+                          
+                    else{
+                    
+                     var x = document.getElementById("c6");
+                          x.style.color = "#00cc00";
+                         
+                         $('#c8').text(''+(1775-randomnumber2));
+                         
+                    
+                    }
+                    if ((randomnumber3 % 2)!=0)
+                    {
+                    
+                    var x = document.getElementById("c9");
+                          x.style.color = "red";
+                          $('#c9').text('-'+randomnumber3);
+                          $('#c11').text(''+(1546.1+randomnumber3));
+                           
+                          }
+                          
+                    else{
+                    
+                     var x = document.getElementById("c9");
+                          x.style.color = "#00cc00";
+                         
+                         $('#c11').text(''+(1546.1-randomnumber3));
+                         
+                    
+                    }
+                    if ((randomnumber4 % 2)!=0)
+                    {
+                    
+                    var x = document.getElementById("c12");
+                          x.style.color = "red";
+                          $('#c12').text('-'+randomnumber4);
+                          $('#c14').text(''+(1448+randomnumber4));
+                           
+                          }
+                          
+                    else{
+                    
+                     var x = document.getElementById("c12");
+                          x.style.color = "#00cc00";
+                         
+                         $('#c14').text(''+(1448-randomnumber4));
+                    
+                    }
+                    if ((randomnumber5 % 2)!=0)
+                    {
+                    
+                    var x = document.getElementById("c15");
+                          x.style.color = "red";
+                          $('#c15').text('-'+randomnumber5);
+                          $('#c17').text(''+(1294.8+randomnumber5));
+                           
+                          }
+                          
+                    else{
+                    
+                     var x = document.getElementById("c15");
+                          x.style.color = "#00cc00";
+                         
+                         $('#c17').text(''+(1294.8-randomnumber5));
+                    
+                    }
+                    if ((randomnumber6 % 2)!=0)
+                    {
+                    
+                    var x = document.getElementById("c18");
+                          x.style.color = "red";
+                          $('#c18').text('-'+randomnumber6);
+                          $('#c20').text(''+(1172+randomnumber6));
+                           
+                          }
+                          
+                    else{
+                    
+                     var x = document.getElementById("c18");
+                          x.style.color = "#00cc00";
+                         
+                         $('#c20').text(''+(1172-randomnumber5));
+                         
+                    
+                    }
+                    if ((randomnumber7 % 2)!=0)
+                    {
+                    
+                    var x = document.getElementById("c21");
+                          x.style.color = "red";
+                          $('#c21').text('-'+randomnumber7);
+                          $('#c23').text(''+(1114.9+randomnumber7));
+                           
+                          }
+                          
+                    else{
+                    
+                     var x = document.getElementById("c21");
+                          x.style.color = "#00cc00";
+                         
+                         $('#c23').text(''+(1114.9-randomnumber7));
+                    
+                    }
+                    if ((randomnumber8 % 2)!=0)
+                    {
+                    
+                    var x = document.getElementById("c24");
+                          x.style.color = "red";
+                          $('#c24').text('-'+randomnumber8);
+                          $('#c26').text(''+(961+randomnumber8));
+                           
+                          }
+                          
+                    else{
+                    
+                     var x = document.getElementById("c24");
+                          x.style.color = "#00cc00";
+                         
+                         $('#c26').text(''+(961-randomnumber8));
+                    
+                    }
+                    if ((randomnumber9 % 2)!=0)
+                    {
+                    
+                    var x = document.getElementById("c27");
+                          x.style.color = "red";
+                          $('#c27').text('-'+randomnumber9);
+                          $('#c29').text(''+(660+(randomnumber9)));
+                           
+                          }
+                          
+                    else{
+                    
+                     var x = document.getElementById("c27");
+                          x.style.color = "#00cc00";
+                         
+                         $('#c29').text(''+(660-randomnumber9));
+                         
+                    
+                    }
+                    if ((randomnumber10 % 2)!=0)
+                    {
+                    
+                    var x = document.getElementById("c30");
+                          x.style.color = "red";
+                          $('#c30').text('-'+randomnumber10);
+                          $('#c32').text(''+(612.6+randomnumber10));
+                           
+                          }
+                          
+                    else{
+                    
+                     var x = document.getElementById("c30");
+                          x.style.color = "#00cc00";
+                        
+                         $('#c32').text(''+(612.6-randomnumber10));
+                    
+                    }
+
+
+
+                    if ((randomnumber11 % 2)!=0)
+                    {
+                    
+                    var x = document.getElementById("c33");
+                          x.style.color = "#00cc00";
+                          $('#c33').text('-'+randomnumber11);
+                          $('#c35').text(''+(430+(randomnumber11)));
+                           
+                          }
+                          
+                    else{
+                    
+                     var x = document.getElementById("c33");
+                          x.style.color = "#00cc00";
+                         
+                         $('#c35').text(''+(760-randomnumber11));
+                         
+                    
+                    }
+                    if ((randomnumber12 % 2)!=0)
+                    {
+                    
+                    var x = document.getElementById("c36");
+                          x.style.color = "red";
+                          $('#c36').text('-'+randomnumber12);
+                          $('#c38').text(''+(230+(randomnumber12)));
+                           
+                          }
+                          
+                    else{
+                    
+                     var x = document.getElementById("c36");
+                          x.style.color = "#00cc00";
+                         
+                         $('#c38').text(''+(460-randomnumber12));
+                         
+                    
+                    }
+                    if ((randomnumber13 % 2)!=0)
+                    {
+                    
+                    var x = document.getElementById("c39");
+                          x.style.color = "red";
+                          $('#c39').text('-'+randomnumber13);
+                          $('#c41').text(''+(430+(randomnumber13)));
+                           
+                          }
+                          
+                    else{
+                    
+                     var x = document.getElementById("c39");
+                          x.style.color = "#00cc00";
+                         
+                         $('#c41').text(''+(860-randomnumber13));
+                         
+                    
+                    }
+                    if ((randomnumber14 % 2)!=0)
+                    {
+                    
+                    var x = document.getElementById("c42");
+                          x.style.color = "red";
+                          $('#c42').text('-'+randomnumber14);
+                          $('#c44').text(''+(240+(randomnumber14)));
+                           
+                          }
+                          
+                    else{
+                    
+                     var x = document.getElementById("c42");
+                          x.style.color = "#00cc00";
+                         
+                         $('#c44').text(''+(970-randomnumber14));
+                         
+                    
+                    }
+                    if ((randomnumber15 % 2)!=0)
+                    {
+                    
+                    var x = document.getElementById("c45");
+                          x.style.color = "red";
+                          $('#c45').text('-'+randomnumber15);
+                          $('#c47').text(''+(340+(randomnumber15)));
+                           
+                          }
+                          
+                    else{
+                    
+                     var x = document.getElementById("c45");
+                          x.style.color = "#00cc00";
+                         
+                         $('#c47').text(''+(570-randomnumber15));
+                         
+                    
+                    }
+                    if ((randomnumber16 % 2)!=0)
+                    {
+                    
+                    var x = document.getElementById("c48");
+                          x.style.color = "red";
+                          $('#c48').text('-'+randomnumber16);
+                          $('#c50').text(''+(260+(randomnumber16)));
+                           
+                          }
+                          
+                    else{
+                    
+                     var x = document.getElementById("c48");
+                          x.style.color = "#00cc00";
+                         
+                         $('#c50').text(''+(460-randomnumber16));
+                         
+                    
+                    }
+                    if ((randomnumber17 % 2)!=0)
+                    {
+                    
+                    var x = document.getElementById("c51");
+                        x.style.color = "red";
+                        
+                          
+                          $('#c51').text('-'+randomnumber17);
+                          $('#c53').text(''+(360+(randomnumber17)));
+                           
+                          }
+                          
+                    else{
+                    
+                     var x = document.getElementById("c51");
+                         x.style.color = "#00cc00";
+                           
+                         $('#c53').text(''+(760-randomnumber17));
+                                             
+                    }  
+                    
+                }, 2000);
+                
+            });  
+    
+</script>
+
+
+<style>
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+a {
+
+  text-decoration:none;
+
+}
+</style>
+</head>
+
+
+<!-- start-smoth-scrolling -->
+</head>
+    
+<body>
+<!-- header -->
+    <div class="header">
+        <div class="dsels_header_top">
+            <div class="container">
+                <div class="dsel_header_left">
+                    <ul class="dselayouts_header">
+                        
+                        <li class="dselayouts_header_list">
+                            <a href="login.html">Login</a><i>|</i>
+                        </li>
+                        <li class="dselayouts_header_list">
+                            <a href="faq.html">FAQ</a><i>|</i>
+                        </li>
+                        <li class="dselayouts_header_list">
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <div class="dsels_header_middle">
+            <div class="container">
+                <div class="agileits_logo">
+                    <h1><a href="index.html">Dhaka Stock Exchange<i>Trade anytime anywhere</i></a></h1>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+<!-- //header -->
+<!-- navigation -->
+    <div class="trade_navigation">
+        <div class="container">
+            <nav class="navbar nav_bottom">
+             
+               <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                    <nav class="wthree_nav">
+                        <ul class="nav navbar-nav nav_1">
+                            <li class="act"><a href="index.html">Home</a></li>
+                            <li><a href="stocks.html">Stock</a></li>
+                            <li><a href="graph.html">Graph</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="highlights.html">Market highlights</a></li>
+                            <li><a href="service.html">Customer Service</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </nav>
+        </div>
+    </div>
+<!-- //navigation -->
+<!-- banner-bottom -->
+    <div class="banner-bottom">
+        <div class="panel panel-default agile_panel">
+            <div class="panel-body agile_panel_body">
+                <ul class="demo1">
+                    <li class="news-item">
+                        <table class="dse_table_trade">
+                            <tr>
+                                <td class="dse_agileits_td demo1_dse_table_trade">
+                                    <table class="agileits_dselayouts_table">
+                                        <tr>
+                                            <td style="color:#01A9CE;text-transform:uppercase;">JANATA </td>
+                                        </tr>
+                                        <tr>
+                                            <td>11.00<i><span class="caret"></span>0.35(-0.10%)</i></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="demo1_dse_table_trade">
+                                    <table class="agileits_dselayouts_table">
+                                        <tr>
+                                            <td style="color:#01A9CE;text-transform:uppercase;">BANK ASIA</td>
+                                        </tr>
+                                        <tr>
+                                            <td>46.00<i><span class="caret"></span>-.600(-0.40%)</i></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="demo1_dse_table_trade">
+                                    <table class="agileits_dselayouts_table">
+                                        <tr>
+                                            <td style="color:#01A9CE;">BRACK BANK</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23.50<i class="wthree_i"><span class="caret caret1"></span>0.00(0.00%)</i></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="demo1_dse_table_trade">
+                                    <table class="agileits_dselayouts_table">
+                                        <tr>
+                                            <td style="color:#01A9CE;text-transform:uppercase;">BEXIMCO</td>
+                                        </tr>
+                                        <tr>
+                                            <td>43.00<i><span class="caret"></span>0.00(-0.23%)</i></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li class="news-item">
+                        <table class="dse_table_trade">
+                            <tr>
+                                <td class="dse_agileits_td demo1_dse_table_trade">
+                                    <table class="agileits_dselayouts_table">
+                                        <tr>
+                                            <td style="color:#01A9CE;text-transform:uppercase;">GRAMEEN</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14.23<i><span class="caret"></span>0.12(-0.37%)</i></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="demo1_dse_table_trade">
+                                    <table class="agileits_dselayouts_table">
+                                        <tr>
+                                            <td style="color:#01A9CE;text-transform:uppercase;">ISLAMI BANK</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10.93<i><span class="caret"></span>4.99(-0.09%)</i></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="demo1_dse_table_trade">
+                                    <table class="agileits_dselayouts_table">
+                                        <tr>
+                                            <td style="color:#01A9CE;text-transform:uppercase;">BATA</td>
+                                        </tr>
+                                        <tr>
+                                            <td>34.70<i><span class="caret"></span>1.00(0.54%)</i></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="demo1_dse_table_trade">
+                                    <table class="agileits_dselayouts_table">
+                                        <tr>
+                                            <td style="color:#01A9CE;text-transform:uppercase;">APEX</td>
+                                        </tr>
+                                        <tr>
+                                            <td>21.00<i><span class="caret"></span>3.89(-0.75%)</i></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                    
+                </ul>
+            </div>
+        <div class="panel-footer"> </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $(".demo1").bootstrapNews({
+                    newsPerPage: 1,
+                    autoplay: true,
+                    pauseOnHover:true,
+                    direction: 'up',
+                    newsTickerInterval: 3000,
+                    onToDo: function () {
+                        //console.log(this);
+                    }
+                });
+                
+                $(".demo2").bootstrapNews({
+                    newsPerPage: 3,
+                    autoplay: true,
+                    pauseOnHover: true,
+                    navigation: false,
+                    direction: 'up',
+                    newsTickerInterval: 2500,
+                    onToDo: function () {
+                        //console.log(this);
+                    }
+                });
+            });
+        </script>
+        <script src="js/jquery.bootstrap.newsbox.min.js" type="text/javascript"></script>
+        <div><marquee>
+                <ul>
+                    <li>Dhaka Stock Exchange | Invest Wisely | Investing In Stock Market Is Risky | "শেয়ারবাজারে বিনিয়োগ ঝুঁকিপূর্ণ, জেনে ও বুঝে বিনিয়োগ করুন। ফেসবুক কিংবা অন্য কোন অসমর্থিত সূত্র থেকে সংগৃহীত তথ্যের ভিত্তিতে
+                      বিনিয়োগ করা থেকে বিরত থাকুন।"</li>
+                    </ul>
+                  </marquee>
+
+                </div>
+              </div>
+              <!-- //banner-bottom -->
+
+
+            <body>
+
+                <h2 align="center">Latest Share Price</h2>
+
+
+                <div class="clearfix"> </div>
+                <div class="agileits_search">
+
+
+                  <input type="text" id="myInput" name="Search" onkeyup="myFunction()" placeholder="Search for Company.." title="Type in a name">
+
+                  <input type="submit" value="Search"><span><h6><i>*you can search compny by typing company name</i></h6></span>
+
+                </div>
+                <br>
+                <br>
+               <div class="clearfix"> </div>
+               <div class="clearfix"> </div>
+                <div class="dsels_ipo_fpo_issues">
+
+                  <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+
+                    <div id="myTabContent1" class="tab-content">
+                      <div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
+                        <div class="dse_agileits_gain_list">
+                          <table id="myTable" class="dse_agile_all_trade dse_agile_all_trade_funds dse_table_trade">
+
+                            <tr>
+                              <th class="dse_agileits_head"><b><h3 style="color:#05777b94;">TRADING CODE</h3></b></th>
+                                                <td class="dse_agileits_head1"><b><h3 style="color:#05777b94;">LTP</h3></b></td>
+                                                <td class="dse_agileits_head1"><b><h3 style="color:#05777b94;">CLOSEP</h3></b></td>
+                                                <td class="dse_agileits_head1"><b><h3 style="color:#05777b94;">YCP</h3></b></td>
+                                                <td class="dse_agileits_head1"><b><h3 style="color:#05777b94;">Trade</h3></b></td>
+                                                <td class="dse_agileits_head1"><b><h3 style="color:#05777b94;">Value (mn)</h3></b></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="dse_agile_th">
+                                                   Islami Bank
+                                                </th>
+                                                <td class="agileits_dselayouts_td" id="c0">86.4</td>
+                                                <td class="agileits_dselayouts_td">2235</td>
+                                                <td class="agileits_dselayouts_td" id="c1"><i>68.6</td>
+                                                <td class="agileits_dselayouts_td" id="c2">45.2</td>
+                                                <td class="agileits_dselayouts_td">306.1460</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="dse_agile_th">
+                                                   Brac Bank
+                                                </th>
+                                                <td class="agileits_dselayouts_td" id="c3">-12.4</td>
+                                                <td class="agileits_dselayouts_td">2235</td>
+                                                <td class="agileits_dselayouts_td" id="c4">68.6</td>
+                                                <td class="agileits_dselayouts_td" id="c5">45.2</td>
+                                                <td class="agileits_dselayouts_td">306.1460</td>
+                                            </tr> 
+                                            <tr>
+                                                <th class="dse_agile_th">
+                                                   Beximco
+                                                </th>
+                                                <td class="agileits_dselayouts_td" id="c6">26.4</td>
+                                                <td class="agileits_dselayouts_td">2235</td>
+                                                <td class="agileits_dselayouts_td" id="c7">74.6</td>
+                                                <td class="agileits_dselayouts_td " id="c8">23.2</td>
+                                                <td class="agileits_dselayouts_td">745.4530</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="dse_agile_th">
+                                                   Square Pharmacuticles LTD
+                                                </th>
+                                                <td class="agileits_dselayouts_td" id="c9">-24.4</td>
+                                                <td class="agileits_dselayouts_td">1235</td>
+                                                <td class="agileits_dselayouts_td" id="c10">64.6</td>
+                                                <td class="agileits_dselayouts_td" id="c11">23.2</td>
+                                                <td class="agileits_dselayouts_td">235.2351</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="dse_agile_th">
+                                                   Aftab Automobiles Limited
+                                                </th>
+                                                <td class="agileits_dselayouts_td" id="c12">62.4</td>
+                                                <td class="agileits_dselayouts_td">4634</td>
+                                                <td class="agileits_dselayouts_td" id="c13">23.6</td>
+                                                <td class="agileits_dselayouts_td" id="c14">64.7</td>
+                                                <td class="agileits_dselayouts_td">374.2356</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="dse_agile_th">
+                                                   Al-Arafah Islami Bank Ltd 
+                                                </th>
+                                                <td class="agileits_dselayouts_td" id="c15">75.4</td>
+                                                <td class="agileits_dselayouts_td">5648</td>
+                                                <td class="agileits_dselayouts_td" id="c16">23.5</td>
+                                                <td class="agileits_dselayouts_td" id="c17">64.6</td>
+                                                <td class="agileits_dselayouts_td">745.2356</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="dse_agile_th">
+                                                   Bangladesh General Insurance Co.
+                                                </th>
+                                                <td class="agileits_dselayouts_td" id="c18">-54.7</td>
+                                                <td class="agileits_dselayouts_td">7346</td>
+                                                <td class="agileits_dselayouts_td" id="c19">23.7</td>
+                                                <td class="agileits_dselayouts_td" id="c20">34.4</td>
+                                                <td class="agileits_dselayouts_td">346.7467</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="dse_agile_th">
+                                                   Dhaka Electric Supply Co. Ltd
+                                                </th>
+                                                <td class="agileits_dselayouts_td" id="c21">-76.4</td>
+                                                <td class="agileits_dselayouts_td">2356</td>
+                                                <td class="agileits_dselayouts_td" id="c22">29.2</td>
+                                                <td class="agileits_dselayouts_td" id="c23">28.2</td>
+                                                <td class="agileits_dselayouts_td">678.3562</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="dse_agile_th">
+                                                   Keya Cosmetics Ltd
+                                                </th>
+                                                <td class="agileits_dselayouts_td" id="c24">61.7</td>
+                                                <td class="agileits_dselayouts_td">2436</td>
+                                                <td class="agileits_dselayouts_td" id="c25">60.4</td>
+                                                <td class="agileits_dselayouts_td" id="c26">12.2</td>
+                                                <td class="agileits_dselayouts_td">435.2368</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="dse_agile_th">
+                                                   Padma Life Insurance Co. Ltd
+                                                </th>
+                                                <td class="agileits_dselayouts_td" id="c27">-45.7</td>
+                                                <td class="agileits_dselayouts_td">7866</td>
+                                                <td class="agileits_dselayouts_td" id="c28">40.8</td>
+                                                <td class="agileits_dselayouts_td" id="c29">36.9</td>
+                                                <td class="agileits_dselayouts_td">472.3765</td>
+                                            </tr>  
+                                            <tr>
+                                                <th class="dse_agile_th">
+                                                   Meghna Life Insurance Co. Ltd
+                                                </th>
+                                                <td class="agileits_dselayouts_td" id="c30">-23.5</td>
+                                                <td class="agileits_dselayouts_td">3621</td>
+                                                <td class="agileits_dselayouts_td" id="c31">23.6</td>
+                                                <td class="agileits_dselayouts_td" id="c32">83.2</td>
+                                                <td class="agileits_dselayouts_td">3246.56</td>
+                                            </tr> 
+                                             <tr>
+                                                <th class="dse_agile_th">
+                                                   Alico Insurance Co. Ltd
+                                                </th>
+                                                <td class="agileits_dselayouts_td" id="c33">73.4</td>
+                                                <td class="agileits_dselayouts_td">9863</td>
+                                                <td class="agileits_dselayouts_td" id="c34">30.4</td>
+                                                <td class="agileits_dselayouts_td" id="c35">34.6</td>
+                                                <td class="agileits_dselayouts_td">873.2351</td>
+                                            </tr> 
+                                             <tr>
+                                                <th class="dse_agile_th">
+                                                   Bata Co. Ltd
+                                                </th>
+                                                <td class="agileits_dselayouts_td" id="c36">10.8</td>
+                                                <td class="agileits_dselayouts_td">4572</td>
+                                                <td class="agileits_dselayouts_td" id="c37">56.2</td>
+                                                <td class="agileits_dselayouts_td" id="c38">74.1</td>
+                                                <td class="agileits_dselayouts_td">353.5643</td>
+                                            </tr> 
+                                             <tr>
+                                                <th class="dse_agile_th">
+                                                   Apex Ltd
+                                                </th>
+                                                <td class="agileits_dselayouts_td" id="c39">16.8</td>
+                                                <td class="agileits_dselayouts_td">2623</td>
+                                                <td class="agileits_dselayouts_td" id="c40">73.2</td>
+                                                <td class="agileits_dselayouts_td" id="c41">37.4</td>
+                                                <td class="agileits_dselayouts_td">277.2746</td>
+                                            </tr> 
+                                             <tr>
+                                                <th class="dse_agile_th">
+                                                   Cats Eye Ltd
+                                                </th>
+                                                <td class="agileits_dselayouts_td" id="c42">-46.4</td>
+                                                <td class="agileits_dselayouts_td">9675</td>
+                                                <td class="agileits_dselayouts_td" id="c43">68.6</td>
+                                                <td class="agileits_dselayouts_td" id="c44">34.2</td>
+                                                <td class="agileits_dselayouts_td">269.4573</td>
+                                            </tr> 
+                                             <tr>
+                                                <th class="dse_agile_th">
+                                                   BIDS Ltd
+                                                </th>
+                                                <td class="agileits_dselayouts_td" id="c45">-17.3</td>
+                                                <td class="agileits_dselayouts_td">1353</td>
+                                                <td class="agileits_dselayouts_td" id="c46">84.6</td>
+                                                <td class="agileits_dselayouts_td" id="c47">24.2</td>
+                                                <td class="agileits_dselayouts_td">373.1460</td>
+                                            </tr> 
+                                             <tr>
+                                                <th class="dse_agile_th">
+                                                   Grameen 
+                                                </th>
+                                                <td class="agileits_dselayouts_td" id="c48">-91.4</td>
+                                                <td class="agileits_dselayouts_td">7215</td>
+                                                <td class="agileits_dselayouts_td" id="c49">74.4</td>
+                                                <td class="agileits_dselayouts_td" id="c50">28.2</td>
+                                                <td class="agileits_dselayouts_td">847.5737</td>
+                                            </tr> 
+                                             <tr>
+                                                <th class="dse_agile_th">
+                                                   ACI Pharmacuticles Co. Ltd
+                                                </th>
+                                                <td class="agileits_dselayouts_td" id="c51">-41.4</td>
+                                                <td class="agileits_dselayouts_td">7345</td>
+                                                <td class="agileits_dselayouts_td" id="c52">85.6</td>
+                                                <td class="agileits_dselayouts_td" id="c53">24.2</td>
+                                                <td class="agileits_dselayouts_td">548.8458</td>
+                                            </tr> 
+                                              
+                                        </table>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <br>
+                    </div>
+                    <script>
+                    //Function For Search Company Name
+                    function myFunction() {
+                      var input, filter, table, tr, td, i;
+                      input = document.getElementById("myInput");
+                      filter = input.value.toUpperCase();
+                      table = document.getElementById("myTable");
+                      tr = table.getElementsByTagName("tr");
+                      for (i = 0; i < tr.length; i++) {
+                        th = tr[i].getElementsByTagName("th")[0];
+                        if (th) {
+                          if (th.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                            tr[i].style.display = "";
+                          } else {
+                            tr[i].style.display = "none";
+                          }
+                        }       
+                      }
+                    }
+                    </script>
+
+
+
+</body>
+</html>

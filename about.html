@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dhaka Stock Exchange</title>
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link class="include" rel="stylesheet" type="text/css" href="css/jquery.jqplot.css" />
+<!-- calender -->
+<link type="text/css" href="css/jquery.simple-dtpicker.css" rel="stylesheet" />
+<!-- //calender -->
+
+<!-- font-awesome icons -->
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<link href="images/1.jpg" rel="shortcut icon">
+<!-- //font-awesome icons -->
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+
+<!-- js -->
+<!-- pop-up -->
+<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+<!-- //pop-up -->
+<!-- left-chart -->
+<script src="js/jquery.flot.min.js" type="text/javascript"></script> 
+<script src="js/jquery.flot.animator.min.js" type="text/javascript"></script>
+<!-- //left-chart -->
+<link href="//fonts.googleapis.com/css?family=Muli:300,300i,400,400i" rel="stylesheet">
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){     
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+        });
+    });
+</script>
+<!-- start-smoth-scrolling -->
+</head>
+    
+<body>
+<!-- header -->
+    <div class="header">
+        <div class="dsels_header_top">
+            <div class="container">
+                <div class="dsel_header_left">
+                    <ul class="dselayouts_header">
+                        
+                        <li class="dselayouts_header_list">
+                            <a href="login.html">Login</a><i>|</i>
+                        </li>
+                        <li class="dselayouts_header_list">
+                            <a href="faq.html">FAQ</a><i>|</i>
+                        </li>
+                        <li class="dselayouts_header_list">
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <div class="dsels_header_middle">
+            <div class="container">
+                <div class="agileits_logo">
+                    <h1><a href="index.html">Dhaka Stock Exchange<i>Trade anytime anywhere</i></a></h1>
+                </div>
+                <div class="agileits_search">
+                    <form action="#" method="post">
+                        <input name="Search" type="text" placeholder="Search" required="">
+                        
+                        <input type="submit" value="Search">
+                    </form>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+<!-- //header -->
+<!-- navigation -->
+    <div class="trade_navigation">
+        <div class="container">
+            <nav class="navbar nav_bottom">
+             
+               <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                    <nav class="wthree_nav">
+                        <ul class="nav navbar-nav nav_1">
+                            <li class="act"><a href="index.html">Home</a></li>
+                            <li><a href="stock.html">Stock</a></li>
+                            <li><a href="graph.html">Graph</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="highlights.html">Market highlights</a></li>
+                            <li><a href="service.html">Customer Service</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </nav>
+        </div>
+    </div>
+<!-- //navigation -->
+<!-- banner-bottom -->
+    <div class="banner-bottom">
+        <div class="panel panel-default agile_panel">
+            <div class="panel-body agile_panel_body">
+                <ul class="demo1">
+                    <li class="news-item">
+                        <table class="dse_table_trade">
+                            <tr>
+                                <td class="dse_agileits_td demo1_dse_table_trade">
+                                    <table class="agileits_dselayouts_table">
+                                        <tr>
+                                            <td style="color:#01A9CE;text-transform:uppercase;">JANATA </td>
+                                        </tr>
+                                        <tr>
+                                            <td>11.00<i><span class="caret"></span>0.35(-0.10%)</i></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="demo1_dse_table_trade">
+                                    <table class="agileits_dselayouts_table">
+                                        <tr>
+                                            <td style="color:#01A9CE;text-transform:uppercase;">BANK ASIA</td>
+                                        </tr>
+                                        <tr>
+                                            <td>46.00<i><span class="caret"></span>-.600(-0.40%)</i></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="demo1_dse_table_trade">
+                                    <table class="agileits_dselayouts_table">
+                                        <tr>
+                                            <td style="color:#01A9CE;">BRACK BANK</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23.50<i class="wthree_i"><span class="caret caret1"></span>0.00(0.00%)</i></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="demo1_dse_table_trade">
+                                    <table class="agileits_dselayouts_table">
+                                        <tr>
+                                            <td style="color:#01A9CE;text-transform:uppercase;">BEXIMCO</td>
+                                        </tr>
+                                        <tr>
+                                            <td>43.00<i><span class="caret"></span>0.00(-0.23%)</i></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li class="news-item">
+                        <table class="dse_table_trade">
+                            <tr>
+                                <td class="dse_agileits_td demo1_dse_table_trade">
+                                    <table class="agileits_dselayouts_table">
+                                        <tr>
+                                            <td style="color:#01A9CE;text-transform:uppercase;">GRAMEEN</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14.23<i><span class="caret"></span>0.12(-0.37%)</i></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="demo1_dse_table_trade">
+                                    <table class="agileits_dselayouts_table">
+                                        <tr>
+                                            <td style="color:#01A9CE;text-transform:uppercase;">ISLAMI BANK</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10.93<i><span class="caret"></span>4.99(-0.09%)</i></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="demo1_dse_table_trade">
+                                    <table class="agileits_dselayouts_table">
+                                        <tr>
+                                            <td style="color:#01A9CE;text-transform:uppercase;">BATA</td>
+                                        </tr>
+                                        <tr>
+                                            <td>34.70<i><span class="caret"></span>1.00(0.54%)</i></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="demo1_dse_table_trade">
+                                    <table class="agileits_dselayouts_table">
+                                        <tr>
+                                            <td style="color:#01A9CE;text-transform:uppercase;">APEX</td>
+                                        </tr>
+                                        <tr>
+                                            <td>21.00<i><span class="caret"></span>3.89(-0.75%)</i></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                    
+                </ul>
+            </div>
+        <div class="panel-footer"> </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $(".demo1").bootstrapNews({
+                    newsPerPage: 1,
+                    autoplay: true,
+                    pauseOnHover:true,
+                    direction: 'up',
+                    newsTickerInterval: 3000,
+                    onToDo: function () {
+                        //console.log(this);
+                    }
+                });
+                
+                $(".demo2").bootstrapNews({
+                    newsPerPage: 3,
+                    autoplay: true,
+                    pauseOnHover: true,
+                    navigation: false,
+                    direction: 'up',
+                    newsTickerInterval: 2500,
+                    onToDo: function () {
+                        //console.log(this);
+                    }
+                });
+            });
+        </script>
+        <script src="js/jquery.bootstrap.newsbox.min.js" type="text/javascript"></script>
+        <div><marquee>
+                <ul>
+                    <li>Dhaka Stock Exchange | Invest Wisely | Investing In Stock Market Is Risky | "শেয়ারবাজারে বিনিয়োগ ঝুঁকিপূর্ণ, জেনে ও বুঝে বিনিয়োগ করুন। ফেসবুক কিংবা অন্য কোন অসমর্থিত সূত্র থেকে সংগৃহীত তথ্যের ভিত্তিতে
+                        বিনিয়োগ করা থেকে বিরত থাকুন।"</li>
+                </ul>
+            </marquee>
+            
+        </div>
+    </div>
+<!-- //banner-bottom -->
+<!-- about -->
+	<div class="news-original">
+		<div class="container">
+			<div class="agileinfo_news_original_grids dse_agile_news_market_grids">
+				<div class="col-md-9 dsels_mutual_funds_grid1_jkjk">
+					<div class="agileits_about_grids dsels_products_grid">
+						<h3>About Dhaka Stock EXchange</h3>
+						<p>The Dhaka Stock Exchange (DSE) is registered as a Public Limited Company and its activities are regulated by its Articles of Association rules & regulations and by-laws along with the Securities and Exchange Ordinance - 1969, Companies Act - 1994 & Securities & Exchange Commission Act - 1993.</p><br><br>
+
+
+						<div class="agileits_about_grid">
+							<div class="col-md-5 agileits_about_grid_left">	
+								<img src="images/35.jpg" alt=" " class="img-responsive" />
+							</div>
+							<div class="col-md-7 agileits_about_grid_right">
+								<h4>Vission:</h4>
+								<p>To be the leading exchange in the region and a key driver of economic growth with state-of-art technology and world class service to ensure highest level of confidence among stakeholders.<span>
+									<h4>Mission:</h4>
+									<p>
+										1. Proactive approach to keep pace with continuous technological advancement, and providing highest standard of service through efficiency improvement and introduction of new products.<br>
+										2. Contributing to country's economic growth through creation of wealth, facilitating access to capital and penetrating untapped market.<br>
+										3. Superior corporate governance to enhance confidence of investors, regulators, issuers and intermediaries.</p>
+									</span></p>
+							</div>
+							<div class="clearfix"> </div>
+							
+						</div>
+						<div class="agileinfo_trade_team">
+                            <h5><i class="fa fa-users" aria-hidden="true"></i>Board of Directors</h5>
+                            <div class="col-md-3 agileinfo_trade_team_grid">
+                                <div class="agileinfo_trade_team_grid1">
+                                    <div class="agile_chat_grid1">
+                                        <img src="images/49.jpg" alt=" " class="img-responsive">
+                                        <div class="agile_p_mask agile_p_mask_team">
+                                            <ul>
+                                                <li><a href="#" class="wthree_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                                <li><a href="#" class="wthree_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li><a href="#" class="wthree_instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="agileinfo_trade_team_agile">
+                                        <h6>Mark Levis</h6>
+                                        <p>Chairman</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 agileinfo_trade_team_grid">
+                                <div class="agileinfo_trade_team_grid1">
+                                    <div class="agile_chat_grid1">
+                                        <img src="images/50.jpg" alt=" " class="img-responsive">
+                                        <div class="agile_p_mask agile_p_mask_team">
+                                            <ul>
+                                                <li><a href="#" class="wthree_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                                <li><a href="#" class="wthree_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li><a href="#" class="wthree_instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="agileinfo_trade_team_agile">
+                                        <h6>Christiane Emily</h6>
+                                        <p>Founder</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 agileinfo_trade_team_grid">
+                                <div class="agileinfo_trade_team_grid1">
+                                    <div class="agile_chat_grid1">
+                                        <img src="images/51.jpg" alt=" " class="img-responsive">
+                                        <div class="agile_p_mask agile_p_mask_team">
+                                            <ul>
+                                                <li><a href="#" class="wthree_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                                <li><a href="#" class="wthree_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li><a href="#" class="wthree_instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="agileinfo_trade_team_agile">
+                                        <h6>Anthony Scott</h6>
+                                        <p>Managing Director</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 agileinfo_trade_team_grid">
+                                <div class="agileinfo_trade_team_grid1">
+                                    <div class="agile_chat_grid1">
+                                        <img src="images/52.jpg" alt=" " class="img-responsive">
+                                        <div class="agile_p_mask agile_p_mask_team">
+                                            <ul>
+                                                <li><a href="#" class="wthree_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                                <li><a href="#" class="wthree_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li><a href="#" class="wthree_instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="agileinfo_trade_team_agile">
+                                        <h6>Bertram Stain</h6>
+                                        <p>Public Interest Director</p>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="clearfix"> </div>   
+                            <div class="col-md-3 agileinfo_trade_team_grid">
+                                <div class="agileinfo_trade_team_grid1">
+                                    <div class="agile_chat_grid1">
+                                        <img src="images/53.jpg" alt=" " class="img-responsive">
+                                        <div class="agile_p_mask agile_p_mask_team">
+                                            <ul>
+                                                <li><a href="#" class="wthree_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                                <li><a href="#" class="wthree_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li><a href="#" class="wthree_instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="agileinfo_trade_team_agile">
+                                        <h6>James Larrey</h6>
+                                        <p>Shareholder Director</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 agileinfo_trade_team_grid">
+                                <div class="agileinfo_trade_team_grid1">
+                                    <div class="agile_chat_grid1">
+                                        <img src="images/54.jpg" alt=" " class="img-responsive">
+                                        <div class="agile_p_mask agile_p_mask_team">
+                                            <ul>
+                                                <li><a href="#" class="wthree_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                                <li><a href="#" class="wthree_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li><a href="#" class="wthree_instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="agileinfo_trade_team_agile">
+                                        <h6>Jefferson Shawn</h6>
+                                        <p>Shareholder Director</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="clearfix"> </div>                        
+                    </div>
+					</div>
+				</div>
+				<div class="col-md-3 agileinfo_news_original_grids_right">
+                    <div class="dselayouts_add_market">
+                        <img src="images/13.jpg" alt=" " class="img-responsive" />
+                        <div class="dselayouts_add_market_pos">
+                            <h3>Guidelines on Dhaka Stock Exchange</h3>
+                        </div>
+                    </div>
+                    <div class="dse_stocks">
+                        <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+                            <ul id="myTab2" class="nav nav-tabs nav-tabs1" role="tablist">
+                                <li role="presentation" class="active"><a href="stocks.html">Dhaka Stock Exchange Share  Price </a></li>
+                                
+                            </ul>
+                            <div id="myTabContent2" class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade in active" id="home2" aria-labelledby="home2-tab">
+                                    <div class="dsel_stocks">
+                                        <div class="dsel_stocks1">
+                                            <h5>Exim Bank</h5>
+                                            <p>579.80<i style="color:#00AA00;"><span class="caret caret1"></span>1.85<label>(0.33%)</label></i></p>
+                                        </div>
+                                        <div class="dsel_stocks1">
+                                            <h5>Prime Bank</h5>
+                                            <p>1,016.35<i><span class="caret"></span>-4.95<label>(-0.48%)</label></i></p>
+                                        </div>
+                                        <div class="dsel_stocks1">
+                                            <h5>Golden Harvest LTD</h5>
+                                            <p>255.70<i><span class="caret"></span>-3.75<label>(-1.45%)</label></i></p>
+                                        </div>
+                                        <div class="dsel_stocks1">
+                                            <h5>IPDC LTD</h5>
+                                            <p>808.25<i style="color:#00AA00;"><span class="caret caret1"></span>13.75<label>(1.75%)</label></i></p>
+                                        </div>
+                                        <div class="dsel_stocks1">
+                                            <h5>IFIC Bank</h5>
+                                            <p>2,548.70<i><span class="caret"></span>-54.80<label>(-2.10%)</label></i></p>
+                                        </div>
+                                        <div class="dsel_stocks1">
+                                            <h5>ICDDRB LTD</h5>
+                                            <p>329.80<i style="color:#00AA00;"><span class="caret caret1"></span>3.85<label>(0.63%)</label></i></p>
+                                        </div>
+                                        <div class="dsel_stocks1">
+                                            <h5>BIDS LTD</h5>
+                                            <p>345.70<i><span class="caret"></span>-12.80<label>(-3.90%)</label></i></p>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="agileinfo_chat">
+                        <h3><i class="fa fa-comments-o" aria-hidden="true"></i>Chat</h3>
+                        <div class="agileinfo_chat_left">
+                            <img src="images/17.jpg" alt=" " class="img-responsive" />
+                        </div>
+                        <div class="agileinfo_chat_right">
+                            <h4>Carl Kasparov</h4>
+                            <p>CEO Dhaka Stock Exchange</p>
+                        </div>
+                        <div class="clearfix"> </div>
+                        <a href="contact.html"><span class="blink_me">Chat Now</span></a>
+                    </div>
+                    <div>
+                        <br>
+                    </div>
+                </div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //about -->
+<!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <ul class="agileits_dselayouts_footer_info">
+                <li><a href="index.html">Home</a><i>|</i></li>
+                <li><a href="stocks.html">Stocks</a><i>|</i></li>
+                <li><a href="graph.html">Graph</a><i>|</i></li>
+                <li><a href="news.html">News</a><i>|</i></li>
+                <li><a href="portfolio.html">portfolio</a><i>|</i></li>
+                <li><a href="about.html">About Us</a><i>|</i></li>
+                <li><a href="highlights.html">Market highlights</a><i>|</i></li>
+                <li><a href="service.html">Customer Service</a></li>
+            </ul>
+            <p>© 2017 Dhaka Stock Exchange. All rights reserved | Design by ULABian</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

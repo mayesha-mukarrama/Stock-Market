@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dhaka Stock Exchange</title>
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link class="include" rel="stylesheet" type="text/css" href="css/jquery.jqplot.css" />
+<!-- calender -->
+<link type="text/css" href="css/jquery.simple-dtpicker.css" rel="stylesheet" />
+<!-- //calender -->
+
+<!-- font-awesome icons -->
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<link href="images/1.jpg" rel="shortcut icon">
+<!-- //font-awesome icons -->
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+
+<!-- js -->
+<!-- pop-up -->
+<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+<!-- //pop-up -->
+<!-- left-chart -->
+<script src="js/jquery.flot.min.js" type="text/javascript"></script> 
+<script src="js/jquery.flot.animator.min.js" type="text/javascript"></script>
+<!-- //left-chart -->
+<link href="//fonts.googleapis.com/css?family=Muli:300,300i,400,400i" rel="stylesheet">
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){     
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+        });
+    });
+</script>
+<!-- start-smoth-scrolling -->
+</head>
+    
+<body>
+<!-- header -->
+    <div class="header">
+        <div class="dsels_header_top">
+            <div class="container">
+                <div class="dsel_header_left">
+                    <ul class="dselayouts_header">
+                        
+                        <li class="dselayouts_header_list">
+                            <a href="login.html">Login</a><i>|</i>
+                        </li>
+                        <li class="dselayouts_header_list">
+                            <a href="faq.html">FAQ</a><i>|</i>
+                        </li>
+                        <li class="dselayouts_header_list">
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <div class="dsels_header_middle">
+            <div class="container">
+                <div class="agileits_logo">
+                    <h1><a href="index.html">Dhaka Stock Exchange<i>Trade anytime anywhere</i></a></h1>
+                </div>
+                <div class="agileits_search">
+                    <form action="#" method="post">
+                        <input name="Search" type="text" placeholder="Search" required="">
+                        
+                        <input type="submit" value="Search">
+                    </form>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+<!-- //header -->
+<!-- navigation -->
+    <div class="trade_navigation">
+        <div class="container">
+            <nav class="navbar nav_bottom">
+             
+               <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                    <nav class="wthree_nav">
+                        <ul class="nav navbar-nav nav_1">
+                            <li class="act"><a href="index.html">Home</a></li>
+                            <li><a href="stocks.html">Stock</a></li>
+                            <li><a href="graph.html">Graph</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="highlights.html">Market Highlight</a></li>
+                            <li><a href="service.html">Customer Service</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </nav>
+        </div>
+    </div>
+<!-- //navigation -->
+<!-- banner-bottom -->
+    <div class="banner-bottom">
+        <div class="panel panel-default agile_panel">
+            <div class="panel-body agile_panel_body">
+                <ul class="demo1">
+                    <li class="news-item">
+                        <table class="dse_table_trade">
+                            <tr>
+                                <td class="dse_agileits_td demo1_dse_table_trade">
+                                    <table class="agileits_dselayouts_table">
+                                        <tr>
+                                            <td style="color:#01A9CE;text-transform:uppercase;">JANATA </td>
+                                        </tr>
+                                        <tr>
+                                            <td>11.00<i><span class="caret"></span>0.35(-0.10%)</i></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="demo1_dse_table_trade">
+                                    <table class="agileits_dselayouts_table">
+                                        <tr>
+                                            <td style="color:#01A9CE;text-transform:uppercase;">BANK ASIA</td>
+                                        </tr>
+                                        <tr>
+                                            <td>46.00<i><span class="caret"></span>-.600(-0.40%)</i></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="demo1_dse_table_trade">
+                                    <table class="agileits_dselayouts_table">
+                                        <tr>
+                                            <td style="color:#01A9CE;">BRACK BANK</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23.50<i class="wthree_i"><span class="caret caret1"></span>0.00(0.00%)</i></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="demo1_dse_table_trade">
+                                    <table class="agileits_dselayouts_table">
+                                        <tr>
+                                            <td style="color:#01A9CE;text-transform:uppercase;">BEXIMCO</td>
+                                        </tr>
+                                        <tr>
+                                            <td>43.00<i><span class="caret"></span>0.00(-0.23%)</i></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li class="news-item">
+                        <table class="dse_table_trade">
+                            <tr>
+                                <td class="dse_agileits_td demo1_dse_table_trade">
+                                    <table class="agileits_dselayouts_table">
+                                        <tr>
+                                            <td style="color:#01A9CE;text-transform:uppercase;">GRAMEEN</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14.23<i><span class="caret"></span>0.12(-0.37%)</i></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="demo1_dse_table_trade">
+                                    <table class="agileits_dselayouts_table">
+                                        <tr>
+                                            <td style="color:#01A9CE;text-transform:uppercase;">ISLAMI BANK</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10.93<i><span class="caret"></span>4.99(-0.09%)</i></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="demo1_dse_table_trade">
+                                    <table class="agileits_dselayouts_table">
+                                        <tr>
+                                            <td style="color:#01A9CE;text-transform:uppercase;">BATA</td>
+                                        </tr>
+                                        <tr>
+                                            <td>34.70<i><span class="caret"></span>1.00(0.54%)</i></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="demo1_dse_table_trade">
+                                    <table class="agileits_dselayouts_table">
+                                        <tr>
+                                            <td style="color:#01A9CE;text-transform:uppercase;">APEX</td>
+                                        </tr>
+                                        <tr>
+                                            <td>21.00<i><span class="caret"></span>3.89(-0.75%)</i></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                    
+                </ul>
+            </div>
+        <div class="panel-footer"> </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $(".demo1").bootstrapNews({
+                    newsPerPage: 1,
+                    autoplay: true,
+                    pauseOnHover:true,
+                    direction: 'up',
+                    newsTickerInterval: 3000,
+                    onToDo: function () {
+                        //console.log(this);
+                    }
+                });
+                
+                $(".demo2").bootstrapNews({
+                    newsPerPage: 3,
+                    autoplay: true,
+                    pauseOnHover: true,
+                    navigation: false,
+                    direction: 'up',
+                    newsTickerInterval: 2500,
+                    onToDo: function () {
+                        //console.log(this);
+                    }
+                });
+            });
+        </script>
+        <script src="js/jquery.bootstrap.newsbox.min.js" type="text/javascript"></script>
+        <div><marquee>
+                <ul>
+                    <li>Dhaka Stock Exchange | Invest Wisely | Investing In Stock Market Is Risky | "শেয়ারবাজারে বিনিয়োগ ঝুঁকিপূর্ণ, জেনে ও বুঝে বিনিয়োগ করুন। ফেসবুক কিংবা অন্য কোন অসমর্থিত সূত্র থেকে সংগৃহীত তথ্যের ভিত্তিতে
+                        বিনিয়োগ করা থেকে বিরত থাকুন।"</li>
+                </ul>
+            </marquee>
+            
+        </div>
+    </div>
+<!-- //banner-bottom -->
+<!-- faq -->
+    <div class="faq">
+        <div class="container">
+            <h3 class="typo_dse_agile_head">Frequently Asked Questions - FAQ</h3>
+            <div class="dsel_faq_grids">
+                <div class="dsel_faq_grid">
+                    <h4>General Information </h4>
+                    <p><ul><li>What is the Stock Exchange?</li>
+                        <li>What is the Role of the Stock Exchange?</li>
+                        <li>How many Stock Exchanges in Bangladesh?</li>
+                        <li>How do you select the company Before You Invest?</li>
+                        <li>What Do Investors Think For Long-term Investment?</li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="dsel_faq_grid">
+                    <h4>ICT Related Information </h4>
+                    <p><ul><li>What is the time interval of the data update at DSE website?</li>
+                        <li>How can I observe some specific instrument's current traded information from the DSE website in a page?</li>
+                        <li>Does DSE offer any SMS facility?</li>
+                        <li>Does DSE offer any GPRS facility?</li>
+                        <li>Is Dhaka Stock Exchange Ltd. offering Internet / Web based trading?</li>
+                    </p>
+                </div>
+                <div class="dsel_faq_grid">
+                    <h4> What is the Stock Exchange?</h4>
+                    <p>The stock exchange provides a sound and stable securities market where shares can be bought and sold.</p>
+                </div>
+                <div class="dsel_faq_grid">
+                    <h4> What is the Role of the Stock Exchange?</h4>
+                    <p>The stock exchange provides listed companies with a channel seek capital fund from the public and at the same time It provides the
+                        investors a place to buy and sell shares of the listed companies.
+                        The exchange also monitors the market to ensure that it is working efficiently, fairly and transparently.</p>
+                </div>
+                <div class="dsel_faq_grid">
+                    <h4>How many Stock Exchanges in Bangladesh?</h4>
+                    <p> There are Two stock exchanges in Bangladesh:
+                        1. Dhaka Stock Exchange Ltd. - Established on 1954
+                        2. Chittagong Stock Exchange Ltd. - Established on 1995
+                        Of these, Dhaka Stock Exchange is the biggest stock exchange in the country.</p>
+                </div>
+                <div class="dsel_faq_grid">
+                    <h4>How do you select the company Before You Invest?</h4>
+                    <p>Don't put in your money until you have understood all relevant information regarding the investment. Prepare yourself for the vigorous homework of analyzing company's annual reports, EPS (Earning Per Share), accounts and other statements while keeping abreast of what's happening in the industry, country and elsewhere that may affect your investment. Consult your investment adviser/broker to get latest market information about shares you intend to buy or sell. Be skeptical of any thing picked up from rumors, particularly if you cannot rationally explain their choice.</p>
+                </div>
+                <div class="dsel_faq_grid">
+                    <h4>Why Do Investors Think For Long-term Investment?</h4>
+                    <p>Bear in mind that even in the best of securities/shares, there can be short-term aberrations. It is important to have the power to hold your investments for longer periods. Studies have shown that investments properly timed and based on strong fundamentals have been very profitable for investors in the longer term</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- //faq -->
+<!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <ul class="agileits_dselayouts_footer_info">
+                <li><a href="index.html">Home</a><i>|</i></li>
+                <li><a href="stocks.html">Stocks</a><i>|</i></li>
+                <li><a href="graph.html">Graph</a><i>|</i></li>
+                <li><a href="news.html">News</a><i>|</i></li>
+                <li><a href="portfolio.html">portfolio</a><i>|</i></li>
+                <li><a href="about.html">About Us</a><i>|</i></li>
+                <li><a href="highlights.html">Market Highlights</a><i>|</i></li>
+                <li><a href="service.html">Customer Service</a></li>
+            </ul>
+            <p>© 2017 Dhaka Stock Exchange. All rights reserved | Design by ULABian</a></p>
+        </div>
+    </div>
+
+
+</body>
+</html>
